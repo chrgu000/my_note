@@ -36,11 +36,11 @@
 
 - ###### 已经安装'laravel/homestead' box，但是执行homestead up时提示找不到box
     -  打开homestead.rb文件 把 
-    ```
+    ```bash
     config.vm.box_version = settings["version"] ||= ">= 0.4.0" 
     ```
     改为
-    ```
+    ```bash
     config.vm.box_version = settings["version"] ||= ">= 0"
     ```
 - 数据库
