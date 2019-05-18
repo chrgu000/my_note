@@ -1,9 +1,3 @@
-- #### git
-    - ##### Personal access tokens 个人授权 
-        1. 30618092dc8d769d1b3766420079fe48408ad708
-
----
-
 
 - #### vs code
     - #####  setting sync
