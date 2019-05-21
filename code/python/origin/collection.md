@@ -6,5 +6,6 @@ B --> D(list)
 B --> E(string)
 B --> F(tuple)
 C --> G(dictionary)
+C --> H(set)
 ```
 
