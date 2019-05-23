@@ -44,7 +44,7 @@
 
 	- Wish订单
 
-	- jumia订单
+	- jumia订单  （**废除**）
 
 	- 冠通售后订单
 
@@ -69,7 +69,11 @@ Lazada
 
 <http://api.rondaful.com/shopee-order/ref-one?test&order_sn=19042720197PJ14&account_id=489>
 
+http://api.rondaful.com/shopee-order/set-sku?test&order_id=481545&sku=EA0566800&id=759026
+
 <http://erp.com/guanyi/test?test&action=reCalculateAmazonSeSummaryV1>
+
+
 
 不加id全拉
 

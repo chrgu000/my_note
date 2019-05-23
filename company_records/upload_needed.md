@@ -177,3 +177,22 @@ trunk/application/customerservice/service/MsgTemplateHelp.php
 trunk/application/order/controller/Aliexpress.php
 trunk/application/order/service/AliOrderServer.php
 
+
+
+
+
+~~wish检测未抓单账号，要重启swoole~~ 
+~~application/order/task/CheckOrderGrabTime.php~~
+~~application/order/task/WishDownload.php~~
+~~application/order/service/WishService.php~~
+~~application/common/cache/driver/WishAccount.php~~
+
+
+
+shopee**查看详情框，提供维护平台sku的功能**
+
+trunk/application/order/controller/Shopee.php
+
+trunk/application/order/task/ShopeeToLocal.php
+
+trunk/application/order/service/ShopeeService.php

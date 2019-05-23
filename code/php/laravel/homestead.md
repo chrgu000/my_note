@@ -54,7 +54,7 @@
     - composer config -g repo.packagist composer https://packagist.phpcomposer.com
     - composer config -g repo.packagist composer https://packagist.laravel-china.org
     -  查看配置
-        ```
+        ```shell
         composer config -gl
         ```
     
@@ -62,7 +62,7 @@
 ---
 - ###### redis
     1. Homestead 下安装redis,按顺序执行如下命令
-        ```
+        ```bash
         sudo apt-get update
         sudo apt-get install redis-ser
         redis-serve 启动redis
@@ -84,13 +84,13 @@
     4. 在Laravel上安装配置redis,
         通过composer安装redis
     
-        ```
+        ```shell
         composer require predis/predis -vvv
         ```
         
     5. 修改端口映射
     
-        	```
+        	```json
         ports:
         	- send: 63790
         	to: 6379 
@@ -99,7 +99,7 @@
   
     - 安装laravel-plugin
     - 在项目的composer.json中添加如下一行
-        ```
+        ```json
         "require": {
         "laravel/framework": "5.1.*",
         "barryvdh/laravel-ide-helper": "^2.3"
