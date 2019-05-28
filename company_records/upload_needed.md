@@ -196,3 +196,23 @@ trunk/application/order/controller/Shopee.php
 trunk/application/order/task/ShopeeToLocal.php
 
 trunk/application/order/service/ShopeeService.php
+
+
+
+
+
+amazon根据时间自动回复
+
+ALTER TABLE `erp-admin`.`msg_rule_set` 
+ADD COLUMN `rule_start` int(10) NOT NULL DEFAULT 0 COMMENT '规则开始时间' AFTER `delay_time_send`,
+ADD COLUMN `rule_end` int(10) NOT NULL DEFAULT 0 COMMENT '规则结束时间' AFTER `rule_start`;
+
+
+
+trunk/application/customerservice/service/MsgRuleHelp.php
+
+trunk/application/common/model/MsgRuleSet.php
+
+trunk/application/customerservice/service/AmazonEmail.php
+
+trunk/application/customerservice/controller/MsgRule.php
