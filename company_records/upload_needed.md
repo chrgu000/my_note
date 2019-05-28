@@ -173,9 +173,9 @@ trunk/application/customerservice/service/MsgTemplateHelp.php
 
 
 
-**增加查询条件：买家选择物流，下拉列表，单选，下拉列表选项显示买家下单时选择的物流。（后）**
-trunk/application/order/controller/Aliexpress.php
-trunk/application/order/service/AliOrderServer.php
+**~~增加查询条件：买家选择物流，下拉列表，单选，下拉列表选项显示买家下单时选择的物流。（后）**~~
+~~trunk/application/order/controller/Aliexpress.php~~
+~~trunk/application/order/service/AliOrderServer.php~~
 
 
 
@@ -189,13 +189,13 @@ trunk/application/order/service/AliOrderServer.php
 
 
 
-shopee**查看详情框，提供维护平台sku的功能**
+~~shopee**查看详情框，提供维护平台sku的功能**~~
 
-trunk/application/order/controller/Shopee.php
+~~trunk/application/order/controller/Shopee.php~~
 
-trunk/application/order/task/ShopeeToLocal.php
+~~trunk/application/order/task/ShopeeToLocal.php~~
 
-trunk/application/order/service/ShopeeService.php
+~~trunk/application/order/service/ShopeeService.php~~
 
 
 
@@ -216,3 +216,11 @@ trunk/application/common/model/MsgRuleSet.php
 trunk/application/customerservice/service/AmazonEmail.php
 
 trunk/application/customerservice/controller/MsgRule.php
+
+模板权限设置
+
+trunk/application/common/cache/driver/MsgTemplate.php
+
+trunk/application/customerservice/service/MsgTemplateHelp.php
+
+trunk/application/customerservice/controller/MsgTemplate.php
