@@ -173,9 +173,9 @@ trunk/application/customerservice/service/MsgTemplateHelp.php
 
 
 
-**增加查询条件：买家选择物流，下拉列表，单选，下拉列表选项显示买家下单时选择的物流。（后）**
-trunk/application/order/controller/Aliexpress.php
-trunk/application/order/service/AliOrderServer.php
+**~~增加查询条件：买家选择物流，下拉列表，单选，下拉列表选项显示买家下单时选择的物流。（后）**~~
+~~trunk/application/order/controller/Aliexpress.php~~
+~~trunk/application/order/service/AliOrderServer.php~~
 
 
 
@@ -189,10 +189,42 @@ trunk/application/order/service/AliOrderServer.php
 
 
 
-shopee**查看详情框，提供维护平台sku的功能**
+~~shopee**查看详情框，提供维护平台sku的功能**~~
 
-trunk/application/order/controller/Shopee.php
+~~trunk/application/order/controller/Shopee.php~~
 
-trunk/application/order/task/ShopeeToLocal.php
+~~trunk/application/order/task/ShopeeToLocal.php~~
 
-trunk/application/order/service/ShopeeService.php
+~~trunk/application/order/service/ShopeeService.php~~
+
+
+
+
+
+amazon根据时间自动回复
+
+ALTER TABLE `erp-admin`.`msg_rule_set` 
+ADD COLUMN `rule_start` int(10) NOT NULL DEFAULT 0 COMMENT '规则开始时间' AFTER `delay_time_send`,
+ADD COLUMN `rule_end` int(10) NOT NULL DEFAULT 0 COMMENT '规则结束时间' AFTER `rule_start`;
+
+
+
+trunk/application/customerservice/service/MsgRuleHelp.php
+
+trunk/application/common/model/MsgRuleSet.php
+
+trunk/application/customerservice/service/AmazonEmail.php
+
+trunk/application/customerservice/controller/MsgRule.php
+
+模板权限设置
+
+trunk/application/common/cache/driver/MsgTemplate.php
+
+trunk/application/customerservice/service/MsgTemplateHelp.php
+
+trunk/application/customerservice/controller/MsgTemplate.php
+
+更改所有模板为公共模板
+
+update msg_template set template_type = 3,permission_id = 0

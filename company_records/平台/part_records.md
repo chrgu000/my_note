@@ -3,7 +3,7 @@
 
     - aliexpress 平台支持 推送有
     
-        ```
+        ```php
         // $time = left_send_good_day * 86400 + left_send_good_hour * 3600 + left_send_good_min * 60 
         //send_good_expire = time() + $time;
         $data['uploaded_deadline'] = $v['send_good_expire'];  //send_good_expire s
@@ -14,7 +14,7 @@
     
     - wish 平台支持 现推送
     
-        ```
+        ```php
         if (!empty($order['hours_to_fulfill'])) {
             $data['uploaded_deadline'] = $order['pay_time'] + $order['hours_to_fulfill'] * 60 * 60;
         } else {
@@ -24,7 +24,7 @@
         
     - Shopee 平台支持 现推送
     
-        ```
+        ```php
         $data['uploaded_deadline'] = $v['create_time']+($v['days_to_ship']+5)*86400;  // days_to_ship 后推5天
         ```
         
@@ -32,20 +32,21 @@
     
     - MyMall 接口有字段 latest_shipped_time 现推送 
     
-        ```
+        ```php
         $data['uploaded_deadline'] = $order_data['order_time'] + 10 * 86400;  //10天
         ```
         
     - jumia 接口字段 PromisedShippingTime 现推送
     
-        ```
+        ```php
          $data['uploaded_deadline'] = $order['PromisedShippingTime'] + 28800;
         ```
         
     - funmart 接口不支持 只有付款时间 ，现推送无最晚发货时间， 未上线。
 - #### amazon资金核算
+    
     - 部分数据订单号为特殊的 ，排除掉了，设置发货类型为0
-        ```
+        ```mysql
         select * from amazon_settlement_report_detail where id=15040735;
         "order_id": "6aabed65-9a88-4332-a071-1072990bb6be",
         ```
