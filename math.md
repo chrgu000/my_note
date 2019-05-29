@@ -1,3 +1,7 @@
+$\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$
+
+<https://blog.csdn.net/mingzhuo_126/article/details/82722455>
+
 ### 1 基本语法
 
 #### 1.1 呈现位置
@@ -267,14 +271,11 @@ $$
 
 ![img](https:////upload-images.jianshu.io/upload_images/436556-8e608fa9d8906bf1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/250/format/webp)
 
+##### 4.6 display 中换行
 
+$$
+xxx \\xxx
+$$
 
-### 5 参考文献
+$sss \\sss$
 
-作者：ColdRomantic
-
-链接：https://www.jianshu.com/p/a0aa94ef8ab2
-
-来源：简书
-
-简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
