@@ -224,3 +224,7 @@ trunk/application/common/cache/driver/MsgTemplate.php
 trunk/application/customerservice/service/MsgTemplateHelp.php
 
 trunk/application/customerservice/controller/MsgTemplate.php
+
+更改所有模板为公共模板
+
+update msg_template set template_type = 3,permission_id = 0
