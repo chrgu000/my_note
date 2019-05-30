@@ -3,7 +3,7 @@
     - #####  setting sync
         ###### config
 
-        1. GitHub Token: 11048582577d6781dc0b390a8ccc0be9915b8e23
+        1. GitHub Token: 11048582577d6781dc0b390a8ccc0be9915b8e2
         2. GitHub Gist: 40a1809aa8aa89ec9ae13498b3058907
         3. GitHub Gist Type: Secret
 
