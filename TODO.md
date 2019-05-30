@@ -1,11 +1,11 @@
 - ~~招商信用卡 开卡 短信~~
-- ~~平台账号错误信息显示~~
+- ~~平台账号错误信息显示~~~~~~
     $$
     \lim_{x\to0}e^x 为什么等于 e^x
     $$
-    - https://www.zybang.com/question/a7e7aa0ee61cd91160175e51e18f7268.html
+    - ~~https://www.zybang.com/question/a7e7aa0ee61cd91160175e51e18f7268.html~~
 
-    - <https://wenku.baidu.com/view/87aac056ad02de80d4d840e3.html>
+    - ~~<https://wenku.baidu.com/view/87aac056ad02de80d4d840e3.html>~~
 
 
 
@@ -16,3 +16,4 @@
 
 - 买小夹子 for note
 
+- 学些有意思的说话
