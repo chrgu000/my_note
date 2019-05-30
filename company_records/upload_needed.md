@@ -227,4 +227,30 @@ trunk/application/customerservice/controller/MsgTemplate.php
 
 更改所有模板为公共模板
 
-update msg_template set template_type = 3,permission_id = 0
+```mysql
+update msg_template set template_type = 3;
+update msg_template_field set template_type = 3;
+update msg_template_group set template_type = 3;
+```
+
+
+
+
+
+速卖通拉取结算报告
+
+
+
+trunk/application/index/service/AccountPushToOA.php
+
+trunk/application/index/service/BasicAccountService.php
+
+trunk/application/report/task/SettlementReportDownload.php
+
+trunk/application/api/service/Account.php
+
+trunk/application/report/service/AliexpressSettlementReportService.php
+
+trunk/application/common/cache/driver/SettleReport.php
+
+trunk/application/index/service/AccountHealthService.php

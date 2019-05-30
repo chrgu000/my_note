@@ -3,8 +3,8 @@
     - #####  setting sync
         ###### config
 
-        1. GitHub Token: 30618092dc8d769d1b3766420079fe48408ad708
-        2. GitHub Gist: db7ab7fb7e6b64fe2802c77c59dcbcdf
+        1. GitHub Token: 11048582577d6781dc0b390a8ccc0be9915b8e23
+        2. GitHub Gist: 40a1809aa8aa89ec9ae13498b3058907
         3. GitHub Gist Type: Secret
 
         ###### operation
@@ -29,7 +29,9 @@
         "sync.removeExtensions": true,
         "sync.syncExtensions": true
         ```
-        
-        
-        
+    
+    - *userful plug-in*
+    
+    	- vscode-pdf
+    	- markdown PDF
 
