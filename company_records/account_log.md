@@ -41,6 +41,16 @@
     - 127.0.0.1
     - root
     - 0000
+    
+  - ###### 245
+  
+  	- ```php
+  		// 'hostname'       => '172.18.8.52',
+  		// 'database'       => 'test_erp',
+  		// 'username'       => 'caozhiqiang',
+  		// 'hostport'       => '3306',
+  		// 'password'       => 'Caozhiqiang123!',
+  		```
 
 ------
 
