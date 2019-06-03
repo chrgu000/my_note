@@ -201,29 +201,29 @@ trunk/application/customerservice/service/MsgTemplateHelp.php
 
 
 
-amazon根据时间自动回复
+~~amazon根据时间自动回复~~
 
-ALTER TABLE `erp-admin`.`msg_rule_set` 
-ADD COLUMN `rule_start` int(10) NOT NULL DEFAULT 0 COMMENT '规则开始时间' AFTER `delay_time_send`,
-ADD COLUMN `rule_end` int(10) NOT NULL DEFAULT 0 COMMENT '规则结束时间' AFTER `rule_start`;
+~~ALTER TABLE `erp-admin`.`msg_rule_set`~~ 
+~~ADD COLUMN `rule_start` int(10) NOT NULL DEFAULT 0 COMMENT '规则开始时间' AFTER `delay_time_send`,~~
+~~ADD COLUMN `rule_end` int(10) NOT NULL DEFAULT 0 COMMENT '规则结束时间' AFTER `rule_start`;~~
 
 
 
-trunk/application/customerservice/service/MsgRuleHelp.php
+~~trunk/application/customerservice/service/MsgRuleHelp.php~~
 
-trunk/application/common/model/MsgRuleSet.php
+~~trunk/application/common/model/MsgRuleSet.php~~
 
 trunk/application/customerservice/service/AmazonEmail.php
 
-trunk/application/customerservice/controller/MsgRule.php
+~~trunk/application/customerservice/controller/MsgRule.php~~
 
-模板权限设置
+~~模板权限设置~~
 
-trunk/application/common/cache/driver/MsgTemplate.php
+~~trunk/application/common/cache/driver/MsgTemplate.php~~
 
-trunk/application/customerservice/service/MsgTemplateHelp.php
+~~trunk/application/customerservice/service/MsgTemplateHelp.php~~
 
-trunk/application/customerservice/controller/MsgTemplate.php
+~~trunk/application/customerservice/controller/MsgTemplate.php~~
 
 更改所有模板为公共模板
 
@@ -233,9 +233,9 @@ update msg_template_field set template_type = 3;
 update msg_template_group set template_type = 3;
 ```
 
+trunk/application/customerservice/service/MsgRuleHelp.php
 
-
-
+trunk/application/customerservice/service/AmazonEmail.php
 
 速卖通拉取结算报告
 
@@ -254,3 +254,27 @@ trunk/application/report/service/AliexpressSettlementReportService.php
 trunk/application/common/cache/driver/SettleReport.php
 
 trunk/application/index/service/AccountHealthService.php
+
+
+
+///速卖通健康数据抓取过滤掉没有与账号基础资料关联的账号
+
+trunk/application/index/task/AliexpressAccountHealthTask.php
+
+
+
+//
+
+ALTER TABLE `pandao_account`
+ADD COLUMN `invalid_message`  varchar(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '账号失效说明';
+
+
+
+
+
+application/order/service/PandaoOrderService.php
+application/order/task/PandaoOrder.php
+application/order/task/PandaoToLocalOrder.php
+application/order/queue/PandaoOrderQueue.php
+extend/pandao/PandaoBaseApi.php
+extend/pandao/PandaoOrdersApi.php

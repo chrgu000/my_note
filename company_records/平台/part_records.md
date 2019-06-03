@@ -44,7 +44,7 @@
         
     - funmart 接口不支持 只有付款时间 ，现推送无最晚发货时间， 未上线。
 - #### amazon资金核算
-    
+  
     - 部分数据订单号为特殊的 ，排除掉了，设置发货类型为0
         ```mysql
         select * from amazon_settlement_report_detail where id=15040735;
@@ -88,6 +88,8 @@
         kasiqi  kasiqi-jumia  La100200
         ```
 
-
+- 站点记录
+	- aliexpress,funmart，mymall，wish，vova，umka，yandex,cd, paytm ,joom ,walmart, oberlo没有站点
+	- amazon ebay daraz zoodmall  shopee lazada 有站点
 
  
