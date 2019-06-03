@@ -260,3 +260,21 @@ trunk/application/index/service/AccountHealthService.php
 ///速卖通健康数据抓取过滤掉没有与账号基础资料关联的账号
 
 trunk/application/index/task/AliexpressAccountHealthTask.php
+
+
+
+//
+
+ALTER TABLE `pandao_account`
+ADD COLUMN `invalid_message`  varchar(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '账号失效说明';
+
+
+
+
+
+application/order/service/PandaoOrderService.php
+application/order/task/PandaoOrder.php
+application/order/task/PandaoToLocalOrder.php
+application/order/queue/PandaoOrderQueue.php
+extend/pandao/PandaoBaseApi.php
+extend/pandao/PandaoOrdersApi.php
